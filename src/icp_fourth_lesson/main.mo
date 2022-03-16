@@ -30,7 +30,7 @@ actor {
     };
 
     public shared (msg) func post(text : Text) : async (Time.Time) {
-        assert(Principal.toText(msg.caller) == "ea234-ybq7w-wyeio-57ez3-kl6f2-rpoub-gjeyc-kywyq-qjsze-heo7r-tae");
+        // assert(Principal.toText(msg.caller) == "ea234-ybq7w-wyeio-57ez3-kl6f2-rpoub-gjeyc-kywyq-qjsze-heo7r-tae");
         let now = Time.now();
         let postMsg = {
             text = text; 
